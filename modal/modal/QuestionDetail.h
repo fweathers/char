@@ -11,6 +11,7 @@
 @interface QuestionDetail : UITableViewController
 @property (strong, nonatomic) IBOutlet UITextField *nameInput;
 @property(strong, nonatomic) NSString *name;
+@property (nonatomic) NSMutableDictionary *athletes;
 
 
 @end

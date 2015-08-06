@@ -10,4 +10,5 @@
 
 @interface ListTableViewController : UITableViewController
 
+@property (nonatomic) NSMutableDictionary *list;
 @end

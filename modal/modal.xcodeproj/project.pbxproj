@@ -94,10 +94,10 @@
 				3D695DED1B6EE6650004DF6C /* Athlete.m */,
 				3D695DE91B6EC4AD0004DF6C /* QuestionDetail.h */,
 				3D695DEA1B6EC4AD0004DF6C /* QuestionDetail.m */,
-				3D695DF21B6EE7E20004DF6C /* ListTableViewController.h */,
-				3D695DF31B6EE7E20004DF6C /* ListTableViewController.m */,
 				3D695DF51B719C9E0004DF6C /* ResultsViewController.h */,
 				3D695DF61B719C9E0004DF6C /* ResultsViewController.m */,
+				3D695DF21B6EE7E20004DF6C /* ListTableViewController.h */,
+				3D695DF31B6EE7E20004DF6C /* ListTableViewController.m */,
 				3D695DBE1B6EBC040004DF6C /* AppDelegate.h */,
 				3D695DBF1B6EBC040004DF6C /* AppDelegate.m */,
 				3D695DC41B6EBC040004DF6C /* Main.storyboard */,
@@ -434,6 +434,7 @@
 				3D695DDC1B6EBC050004DF6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D695DDD1B6EBC050004DF6C /* Build configuration list for PBXNativeTarget "modalTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +443,7 @@
 				3D695DDF1B6EBC050004DF6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

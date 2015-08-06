@@ -15,37 +15,8 @@
 @implementation Athlete
 
 
-- (void) initializeData {
- 
-    [self listofAthletes];
-}
 
-- (void)listofAthletes {
-    
-    self.athletes = [self returnListofAthletes];
-}
 
-- (NSMutableDictionary *)returnListofAthletes {
-    
-    NSMutableDictionary *tmp = [[NSMutableDictionary alloc]init];
-    self.object = [[QuestionDetail alloc]init];
-    
-    self.name = self.object.nameInput.text;
-    
-    NSLog(@"%@", self.name);
-    
-    [tmp setObject:self.object.name forKey:@"name"];
-    
-    return tmp;
-}
 
-- (void) test {
-    
-    self.object = [[QuestionDetail alloc]init];
-    
-    self.name = self.object.nameInput.text;
-    
-    NSLog(@"%@", self.name);
-}
 
 @end

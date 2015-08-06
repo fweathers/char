@@ -9,6 +9,7 @@
 #import "QuestionDetail.h"
 #import "ResultsViewController.h"
 #import "Athlete.h"
+#import "ListTableViewController.h"
 
 @interface QuestionDetail ()
 @property (nonatomic) Athlete *model;
@@ -26,6 +27,7 @@
 
 
 - (IBAction)closeQuestionOne:(UIButton *)sender {
+    
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -35,8 +37,8 @@
     
     NSLog(@"%@", self.name);
     
-    [self.model test];
-
+    self.model.name = self.name;
+    
 }
 
 - (IBAction)goButton:(UIButton *)sender {
@@ -50,12 +52,20 @@
     
 
     
-//    ResultsViewController *detailViewController = segue.destinationViewController;
+    ResultsViewController *detailViewController = segue.destinationViewController;
+    
+    detailViewController.results = self.model.name;
+    
+    
+    
+//    ListTableViewController *listViewController = segue.destinationViewController;
 //    
-//    detailViewController.results = self.model.name;
+//    listViewController.list = self.model.athletes;
+//    
+//    NSLog(@"%@", self.model.athletes);
+    
 //    
 //    [self.model anAthlete];
-//    
     
     
 }
@@ -64,6 +74,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 
 

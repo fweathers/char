@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Athlete : UITableViewController
+@interface Athlete : NSObject
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSArray *brandShoes;
-@property (nonatomic) NSMutableDictionary *athletes;
 
-
-- (void)initializeData;
-
-- (void) test;
 @end
 

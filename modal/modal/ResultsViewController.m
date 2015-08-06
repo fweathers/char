@@ -12,6 +12,7 @@
 
 @interface ResultsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameGeneratore;
+@property (nonatomic) Athlete *model;
 
 @end
 
@@ -20,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    
+//    self.model = [[Athlete alloc]init];
+//    
+//    NSString *atheleteName = [[self.model athletes]objectForKey:@"name"];
 
     self.nameGeneratore.text = self.results;
 }
